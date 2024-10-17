@@ -52,12 +52,14 @@ const videos = ref([
 
 const nextVideo = () => {
   currentVideoIndex.value = (currentVideoIndex.value + 1) % videos.value.length;
-  console.log(`next video: ${currentVideoIndex.value}`);
 };
 
 const prevVideo = () => {
+  if (currentVideoIndex.value === 0) {
+    return;
+  }
+
   currentVideoIndex.value = (currentVideoIndex.value - 1 + videos.value.length) % videos.value.length;
-  console.log(`prev video: ${currentVideoIndex.value}`);
 };
 
 const { isSwiping } = useSwipe(videoFeed, {
