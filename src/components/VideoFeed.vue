@@ -13,8 +13,10 @@
 </template>
 
 <script setup>
-import { useSwipe } from "@vueuse/core";
+import { useSwipe, useWindowSize } from "@vueuse/core";
 import { useShuffle } from "../composables/useShuffle.js";
+
+const { height } = useWindowSize()
 
 const videoFeed = ref(null);
 const currentVideoIndex = ref(0);
@@ -66,6 +68,11 @@ onMounted(() => {
 });
 
 watch(currentVideoIndex, () => {
+  videoFeed.value.style.transform = `translate3d(0, -${(currentVideoIndex.value) * videoSize.value}px, 0)`;
+});
+
+watch(height, () => {
+  videoSize.value = videoFeed.value.clientHeight / videos.value.length;
   videoFeed.value.style.transform = `translate3d(0, -${(currentVideoIndex.value) * videoSize.value}px, 0)`;
 });
 

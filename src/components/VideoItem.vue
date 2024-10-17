@@ -89,7 +89,7 @@ watch(videoIsVisible, (isVisible) => {
 
 <style scoped lang="postcss">
 .video-container {
-  @apply relative w-full h-screen bg-black;
+  @apply relative w-full h-dvh bg-black;
 }
 
 .video {
