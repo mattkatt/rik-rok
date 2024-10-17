@@ -11,6 +11,7 @@
       muted
       @pause="videoIsPaused = true"
       @play="videoIsPaused = false"
+      preload="auto"
     ></video>
 
     <icon-fa6-solid-play v-if="videoIsPaused" class="play-icon" @click="startStop"/>
@@ -89,7 +90,7 @@ watch(videoIsVisible, (isVisible) => {
 
 <style scoped lang="postcss">
 .video-container {
-  @apply relative w-full h-dvh bg-black;
+  @apply relative w-full h-screen bg-black;
 }
 
 .video {
