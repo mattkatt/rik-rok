@@ -11,7 +11,6 @@
       muted
       @pause="videoIsPaused = true"
       @play="videoIsPaused = false"
-      preload="auto"
     ></video>
 
     <icon-fa6-solid-play v-if="videoIsPaused" class="play-icon" @click="startStop"/>
