@@ -27,6 +27,8 @@ const loaded = ref(false);
 const videos = ref([
     "/rik-rok/videos/matt_evans.mp4",
     ...useShuffle([
+      "/rik-rok/videos/adam_lyle.mp4",
+      "/rik-rok/videos/adrian_edworthy.mp4",
       "/rik-rok/videos/anina_kinzel.mp4",
       "/rik-rok/videos/carly_&_jordan.mp4",
       "/rik-rok/videos/cath_elms.mp4",
@@ -39,6 +41,7 @@ const videos = ref([
       "/rik-rok/videos/liz_taylor.mp4",
       "/rik-rok/videos/lou_peck.mp4",
       "/rik-rok/videos/lucy_bason.mp4",
+      "/rik-rok/videos/matthew_sparrow.mp4",
       "/rik-rok/videos/melon_bailey.mp4",
       "/rik-rok/videos/morgan_clark.mp4",
       "/rik-rok/videos/nico_campbell.mp4",
