@@ -18,6 +18,6 @@ const bounce = () => {
 
 <style scoped lang="postcss">
 .app-footer__item {
-  @apply relative font-bold text-3xl m-4;
+  @apply relative font-bold text-3xl m-4 drop-shadow;
 }
 </style>

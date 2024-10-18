@@ -1,7 +1,7 @@
 <template>
   <header class="app-header">
     <img :src="img" alt="logo" class="h-12 m-2" />
-    <h1>{{ title }} | <span class="app-title">RikRok</span></h1>
+    <h1 class="drop-shadow">{{ title }} | <span class="app-title">RikRok</span></h1>
     <img :src="img" alt="logo" class="h-12 m-2 opacity-0" />
   </header>
 </template>
@@ -20,7 +20,7 @@ const title = computed(() => {
 
 <style scoped lang="postcss">
 .app-header {
-  @apply flex w-full h-16 fixed top-0 text-white left-0 z-10 justify-between items-center;
+  @apply flex w-full h-16 fixed top-0 text-white left-0 z-10 justify-between items-center bg-gradient-to-b from-[rgba(0,0,0,0.3)];
 }
 
 .app-title {

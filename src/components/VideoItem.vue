@@ -97,15 +97,15 @@ watch(videoIsVisible, (isVisible) => {
 }
 
 .play-icon {
-  @apply absolute top-1/2 left-1/2 text-white text-8xl -translate-x-1/2 -translate-y-1/2;
+  @apply absolute top-1/2 left-1/2 text-white text-8xl -translate-x-1/2 -translate-y-1/2 drop-shadow;
 }
 
 .sidebar {
-  @apply absolute bottom-16 right-0;
+  @apply absolute bottom-32 right-0;
 }
 
 .sidebar__item {
-  @apply text-white flex flex-col items-center m-2;
+  @apply text-white flex flex-col items-center m-2 drop-shadow;
 }
 
 .sidebar__icon {

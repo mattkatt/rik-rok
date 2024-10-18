@@ -28,7 +28,7 @@
 
 <style scoped lang="postcss">
 .app-footer {
-  @apply flex w-full h-16 fixed bottom-0 text-white left-0 z-10 justify-between items-center;
+  @apply flex w-full h-16 fixed bottom-0 text-white left-0 z-10 justify-between items-center bg-gradient-to-t from-[rgba(0,0,0,0.3)];
 }
 
 .app-footer__circle:before {
